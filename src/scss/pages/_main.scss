@@ -1,6 +1,30 @@
+.mainWrap{
+  span {
+    // background-color: darkgoldenrod;
+    font-weight: 550;
+
+    &.txtStrong-cLila {
+      color: #854EC7;
+    }
+
+    &.txtStrong-cMag {
+      color: #C13EB0;
+    }
+
+    &.txtStrong-cPink {
+      color: #EA3693;
+    }
+
+    &.txtStrong-cSalm {
+      color: #EF5D6A;
+    }
+    &.txtStrong-cBlue {
+      color: #0067bd;
+    }
+  }
+}
 .mainContainer {
   // background-color: blue;
-
   &-banner {
     // background-color: brown;
     height: 80px;
@@ -28,16 +52,22 @@
     .contentInformation {
       // background-color: darkblue;
     }
-    span {
-      // background-color: darkgoldenrod;
-      font-weight: 550;
-      &.txtStrong-cLila {
-        color: #854EC7;
-      }
-      &.txtStrong-cMag {
-        color: #C13EB0;
-      }
-    }
+    // span {
+    //   // background-color: darkgoldenrod;
+    //   font-weight: 550;
+    //   &.txtStrong-cLila {
+    //     color: #854EC7;
+    //   }
+    //   &.txtStrong-cMag {
+    //     color: #C13EB0;
+    //   }
+    //   &.txtStrong-cPink {
+    //     color: #EA3693;
+    //   }
+    //   &.txtStrong-cSalm {
+    //     color: #EF5D6A;
+    //   }
+    // }
     .check::before {
       content: '\f00c';
       padding-right: 0.5rem;
@@ -101,6 +131,215 @@
 
         .check::before {
           color: #C13EB0     }
+      }
+    }
+    &_imageQuery {
+      background-image: url('/public/images/manos.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      .image{
+        background-image: url('/public/images/pacto.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+      }
+    }
+    &_recog {
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+      .titleIcon-Information {
+
+        &_icon,
+        &_title {
+          background-color: #FF9A24;
+        }
+      }
+
+      &__info {
+        margin: 0 2.5rem;
+
+        .nombre {
+          font-size: 1.1rem;
+          color: #FF9A24
+        }
+
+        .check::before {
+          color: #FF9A24
+        }
+      }
+    }
+    &_politic {
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+      .titleIcon-Information {
+
+        &_icon,
+        &_title {
+          background-color: #EA3693;
+        }
+      }
+
+      &__info {
+        margin: 0 2.5rem;
+
+        .check::before {
+          color: #EA3693
+        }
+      }
+    }
+    &_traject {
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+      .titleIcon-Information {
+
+        &_icon,
+        &_title {
+          background-color: #85C10B;
+        }
+      }
+
+      .contentList-traject {
+        li{
+          list-style: none;
+        }
+        margin: 0 2.5rem;
+
+        .check::before {
+          color: #85C10B
+        }
+      }
+    }
+    &_other {
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+      .titleIcon-Information {
+
+        &_icon,
+        &_title {
+          background-color: #EF5D6A;
+        }
+      }
+
+      &__info {
+        margin: 0 2.5rem;
+
+        .check::before {
+          color: #EF5D6A
+        }
+      }
+    }
+  }
+  &-banner_mid {
+    // background-color: brown;
+    height: 80px;
+    @include centerFlex;
+    background: linear-gradient(46deg, #9a29bd, #0067bd);
+    background-size: 150% 150%;
+
+    animation: AnimationName 5s ease infinite;
+
+    @keyframes AnimationName {
+      0% {
+        background-position: 100% 0%
+      }
+
+      50% {
+        background-position: 0% 100%
+      }
+
+      100% {
+        background-position: 100% 0%
+      }
+    }
+  }
+}
+.midContainer{
+  &-imageQuery {
+    margin-top: 1rem;
+    background-image: url('/public/images/social.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .image {
+      background-color: #9C15BF;
+      width: 20vh;
+      margin:0 0 0.5rem 0;
+      background-image: url('/public/images/logoB.png');
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: center;
+    }
+  }
+  &-information{
+    margin: 1rem 2rem 0 2rem;
+  }
+}
+.endContainer {
+  // background-color: palegreen;
+
+  &-imageQuery {
+    // background-color: brown;
+    margin-top: 1rem;
+    background-image: url('/public/images/endImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &-bannerEnd {
+    // background-color: darkblue;
+    height: 150px;
+    @include centerFlex;
+    background: linear-gradient(46deg, #9a29bd, #0067bd);
+    background-size: 150% 150%;
+
+    animation: AnimationName 5s ease infinite;
+
+    @keyframes AnimationName {
+      0% {
+        background-position: 100% 0%
+      }
+
+      50% {
+        background-position: 0% 100%
+      }
+
+      100% {
+        background-position: 100% 0%
+      }
+    }
+    &_images {
+      // background-color: rgba(239, 247, 255, 1);
+
+      .pacto {
+        // background-color: aqua;
+        // height: 100%;
+        margin-right: 0.5rem;
+
+      }
+
+      .gen {
+        // background-color: orange;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-left: 0.03rem solid gray;
+        border-right: 0.03rem solid gray;
+      }
+
+      .mujer {
+        // background-color: indianred;
+        margin-left: 0.5rem;
       }
     }
   }
