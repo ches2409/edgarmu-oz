@@ -1,0 +1,24 @@
+.titleIcon-Information{
+  // background-color: paleturquoise;
+  @include centerGrid;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0;
+  grid-template-columns: 20% 80%;
+  &_icon, &_title{
+    background-color: #854EC7;
+    @include centerFlex;
+    height: 60px;
+  }
+  &_icon{
+    // background-color: cornflowerblue;
+    margin-right: 0.25rem;
+    grid-column: 1 / 2;
+    color: aliceblue;
+    font-size: 2rem;
+  }
+  &_title{
+    // background-color: darkmagenta;
+    margin-left: 0.25rem;
+    grid-column: 2 / 3;
+  }
+}

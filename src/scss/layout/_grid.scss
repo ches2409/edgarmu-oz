@@ -1,0 +1,231 @@
+.heroWrap{
+  // background-color: gray;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 8% 12% 15% 40% 10% 15%;
+  &-background{
+    background-color: blueviolet;
+    // background-image: url('/public/images/heroA.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: bottom;
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+  }
+  &-contact{
+    // background-color: pink;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    .number, .text {
+      // background-color: orange;
+      width: 80%;
+      @include centerFlex;
+    }
+    .icon {
+      // background-color: aqua;
+      width: 20%;
+      @include centerFlex;
+    }
+    &_number{
+      // background-color: red;
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+
+
+    }
+    &_text{
+      // background-color: lawngreen;
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+  &-sello{
+    // background-color: firebrick;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  &-lema{
+    // background-color: lawngreen;
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    @include centerFlex;
+  }
+  &-logos{
+    // background-color: royalblue;
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    @include centerFlex;
+    .pacto{
+      // background-color: aqua;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    .gen{
+      // background-color: orange;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .mujer{
+      // background-color: indianred;
+      grid-column: 3 / 4;
+    }
+  }
+}
+.mainContainer{
+  // background-color: blue;
+  &-banner{
+    // background-color: brown;
+  }
+  &-information{
+    // background-color: mediumaquamarine;
+    &_academy{
+      // background-color: chartreuse;
+      // height: 100vh;
+      &__info{
+        // background-color: bisque;
+      }
+    }
+    &_biography{
+      // background-color: pink;
+    }
+    &_accomp{
+      // background-color:red ;
+      &__info{
+        grid-template-rows: repeat(10, 1fr);
+        .wrapAccomp{
+          display: grid;
+          margin-bottom: 0.5rem;
+          grid-template-columns: 10% 90%;
+          grid-template-rows: 1fr 1fr;
+          // justify-items: center;
+          // align-items: center;
+          // justify-content: center;
+          // align-content: center;
+          // @include centerFlex;
+          // flex-direction: row-reverse;
+          .contentInformation {
+            // background-color: aquamarine;
+            // height: 100%;
+            margin-left: 0.5rem;
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+          }
+
+          .modalBox {
+            // background-color: plum;
+            // height: 10%;
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+          }
+          .contentList{
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+          }
+          .contentList-gestion{
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+          }
+        }
+        .one{
+          // background-color: red;
+          grid-row: 1 / 2;
+        }
+        .two {
+          // background-color: blue;
+          grid-row: 2 / 3;
+        }
+        .three {
+          // background-color:olivedrab ;
+          grid-row: 3 / 4;
+        }
+        .for {
+          // background-color:yellow ;
+          grid-row: 4 / 5;
+        }
+        .five {
+          // background-color:salmon ;
+          grid-row: 5 / 6;
+        }
+        .six {
+          // background-color:navy ;
+          grid-row: 6 / 7;
+        }
+        .seven {
+          // background-color:royalblue ;
+          grid-row: 7 / 8;
+        }
+        .eight {
+          // background-color:aqua ;
+          grid-row: 8 / 9;
+        }
+        .nine {
+          // background-color:crimson ;
+          grid-row: 9 / 10;
+        }
+        .ten {
+          // background-color: red;
+          grid-row: 10 / 11;
+        }
+      }
+    }
+    &_imageQuery{
+      background-color:blue ;
+    }
+    &_recog{
+      background-color:orange ;
+    }
+    &_politic{
+      background-color:indigo ;
+    }
+    &_traject{
+      background-color:yellow ;
+    }
+    &_other{
+      background-color: peru;
+    }
+  }
+  &-banner_mid{
+    background-color: crimson;
+  }
+}
+.midContainer{
+  background-color: chocolate;
+}
+@include mQ(xsS){
+  body{
+    // background-color: rebeccapurple;
+  }
+}
+@include mQ(smallS){
+  body{
+    // background-color: orangered;
+  }
+}
+@include mQ(mediumS){
+  body{
+    // background-color: yellowgreen;
+  }
+}
+@include mQ(wideS){
+  body{
+    // background-color: teal;
+  }
+}
+@include mQ(largeS){
+  body{
+    // background-color: violet;
+  }
+}
+@include mQ(xlS){
+  body{
+    // background-color: fuchsia;
+  }
+}

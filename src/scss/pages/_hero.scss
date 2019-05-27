@@ -1,0 +1,147 @@
+.heroWrap {
+  // background-color: gray;
+
+  &-background{
+    background-image: url('/public/images/heroA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  &-contact {
+    // background-color: pink;
+
+    .number, .text {
+      // background-color: orange;
+      color: aliceblue;
+      height: 80%;
+    }
+
+    .icon {
+      // background-color: aqua;
+      height: 80%;
+    }
+
+    &_number {
+      // background-color: red;
+      .number{
+        background-color: #9A29BD
+      }
+      .icon{
+        background-color: #8B29B8;
+        background-image: url('/public/images/tel.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+      }
+    }
+
+    &_text {
+      // background-color: lawngreen;
+      .text {
+        background-color: #3678D6;
+      }
+
+      .icon {
+        background-color: rgb(39, 112, 200);
+        background-image: url('/public/images/chat.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+      }
+    }
+  }
+
+  &-sello {
+    // background-color: firebrick;
+  }
+
+  &-lema {
+    // background-color: blueviolet;
+    color: aliceblue;
+    font-size: 1.5rem;
+    background: linear-gradient(46deg, #9a29bd, #0067bd);
+    background-size: 150% 150%;
+
+    animation: AnimationName 5s ease infinite;
+
+    @keyframes AnimationName {
+      0% {
+        background-position: 100% 0%
+      }
+
+      50% {
+        background-position: 0% 100%
+      }
+
+      100% {
+        background-position: 100% 0%
+      }
+    }
+  }
+
+  &-logos {
+    background-color: rgba(239, 247, 255, 1);
+
+    .pacto {
+      // background-color: aqua;
+      // height: 100%;
+      margin-right: 0.5rem;
+
+    }
+
+    .gen {
+      // background-color: orange;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      border-left: 0.03rem solid gray;
+      border-right: 0.03rem solid gray;
+    }
+
+    .mujer {
+      // background-color: indianred;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.mainContainer {
+  // background-color: blue;
+}
+
+@include mQ(xsS) {
+  body {
+    //background-color: rebeccapurple;
+  }
+}
+
+@include mQ(smallS) {
+  body {
+    //background-color: orangered;
+  }
+}
+
+@include mQ(mediumS) {
+  body {
+    //background-color: yellowgreen;
+  }
+}
+
+@include mQ(wideS) {
+  body {
+    //background-color: teal;
+  }
+}
+
+@include mQ(largeS) {
+  body {
+    //background-color: violet;
+  }
+}
+
+@include mQ(xlS) {
+  body {
+    //background-color: fuchsia;
+  }
+}

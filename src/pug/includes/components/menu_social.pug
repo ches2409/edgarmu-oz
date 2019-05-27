@@ -1,0 +1,8 @@
+// menu lateral de redes sociales
+mixin social(sociales)
+  nav.social
+    ul.social-list
+      each item in sociales
+        li.social-list__item
+          a.social-list__link(href=`${item[0]}` target=`${item[3]}`)
+            i(class=`${item[2]}`+" "+"fa-"+`${item[1]}`)

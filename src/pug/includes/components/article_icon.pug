@@ -1,0 +1,12 @@
+-imgPath='/public/images/'
+mixin articleIcon(content)
+  each item in content
+    section.midContainer-secInfo
+      .midContainer-secInfo_header
+        .secInfo-title
+          h3.secInfo-title_text #{item[0]}
+        .secInfo-icon
+          img(src=imgPath+`${item[1]}`, alt="")
+      .midContainer-secInfo_body
+        p.secInfo-body_text #{item[2]}
+
