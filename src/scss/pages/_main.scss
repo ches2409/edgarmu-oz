@@ -93,7 +93,7 @@
       padding-bottom: 0.5rem;
       box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
       .titleIcon-Information{
-        &_icon, &_title{
+        &_icon, &_title, &_bar{
           background-color:#0096E0;
         }
       }
@@ -117,7 +117,8 @@
       .titleIcon-Information {
 
         &_icon,
-        &_title {
+        &_title,
+        &_bar {
           background-color: #C13EB0;
         }
       }
@@ -153,7 +154,8 @@
       .titleIcon-Information {
 
         &_icon,
-        &_title {
+        &_title,
+        &_bar {
           background-color: #FF9A24;
         }
       }
@@ -179,7 +181,8 @@
       .titleIcon-Information {
 
         &_icon,
-        &_title {
+        &_title,
+        &_bar {
           background-color: #EA3693;
         }
       }
@@ -200,7 +203,8 @@
       .titleIcon-Information {
 
         &_icon,
-        &_title {
+        &_title,
+        &_bar {
           background-color: #85C10B;
         }
       }
@@ -224,7 +228,8 @@
       .titleIcon-Information {
 
         &_icon,
-        &_title {
+        &_title,
+        &_bar {
           background-color: #EF5D6A;
         }
       }
@@ -342,5 +347,2174 @@
         margin-left: 0.5rem;
       }
     }
+  }
+}
+.contactContainer {
+  background-color: #4D4D4D;
+
+  &-formBox {
+    // background-color: aqua;
+    margin-top: 1rem;
+
+    .call {
+      // background-color: blueviolet;
+      margin-left: 1rem;
+      padding-top: 1rem;
+    }
+
+    .formBox {
+      // background-color: antiquewhite;
+      margin: 1rem;
+      padding: 1rem;
+      border: 0.1rem solid black;
+      border-radius: 0.5rem;
+
+      &-left {
+        // background-color: brown;
+
+        &_text {
+          // background-color: aqua;
+          color: aliceblue;
+          display: flex;
+
+          label {
+            // background-color: blueviolet;
+            margin: 0.5rem 0 0.5rem 0.5rem;
+            width: 100%;
+          }
+
+          input {
+            margin: 0.5rem 0 0.5rem 0;
+            width: 100%;
+          }
+        }
+      }
+
+      &-right {
+        // background-color:olivedrab ;
+        @include centerFlex;
+        text-align: center;
+
+        &_ref {
+          background-color: #1A1A1A;
+          margin-left: 0.5rem;
+          border-radius: 0.5rem;
+          padding: 0.5rem;
+        }
+
+        a {
+          list-style: none;
+          text-decoration: none;
+          color: aliceblue;
+        }
+      }
+    }
+  }
+  &-imgBox {
+    height: 30vh;
+    @include centerFlex;
+    background-image: url('/public/images/logoB.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+  }
+}
+footer {
+  background-color: #1A1A1A;
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
+
+
+@include mQ(xsS) {
+  body {
+    // background-color: rebeccapurple;
+    .mainWrap {
+
+    }
+
+    .mainContainer {
+
+      // background-color: blue;
+      &-banner {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+
+      &-information {
+        .contentInformation {
+          // background-color: darkblue;
+        }
+        .check::before {
+          // content: '\f00c';
+          // padding-right: 0.5rem;
+          // font-family: FontAwesome;
+        }
+
+        &_academy {
+          // background-color: chartreuse;
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          &__info {
+            // background-color: bisque;
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #854EC7;
+            }
+          }
+        }
+
+        &_biography {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #0096E0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #0096E0;
+            }
+
+            .check::before {
+              // color: #0096E0;
+            }
+          }
+        }
+
+        &_accomp {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #C13EB0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #C13EB0
+            }
+
+            .check::before {
+              // color: #C13EB0
+            }
+          }
+        }
+
+        &_imageQuery {
+          background-image: url('/public/images/manos2.jpg');
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: bottom;
+
+          .image {
+            // background-image: url('/public/images/pacto.png');
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: bottom;
+          }
+        }
+
+        &_recog {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #FF9A24;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #FF9A24
+            }
+
+            .check::before {
+              // color: #FF9A24
+            }
+          }
+        }
+
+        &_politic {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EA3693;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EA3693
+            }
+          }
+        }
+
+        &_traject {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #85C10B;
+            }
+          }
+
+          .contentList-traject {
+            li {
+              // list-style: none;
+            }
+
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #85C10B
+            }
+          }
+        }
+
+        &_other {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EF5D6A;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EF5D6A
+            }
+          }
+        }
+      }
+
+      &-banner_mid {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+    }
+
+    .midContainer {
+      &-imageQuery {
+        // margin-top: 1rem;
+        // background-image: url('/public/images/social.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+
+        .image {
+          // background-color: #9C15BF;
+          width: 20vh;
+          // margin: 0 0 0.5rem 0;
+          // background-image: url('/public/images/logoB.png');
+          // background-repeat: no-repeat;
+          // background-size: 70%;
+          // background-position: center;
+        }
+      }
+
+      &-information {
+        // margin: 1rem 2rem 0 2rem;
+      }
+    }
+
+    .endContainer {
+      // background-color: palegreen;
+
+      &-imageQuery {
+        // background-color: brown;
+        // margin-top: 1rem;
+        background-image: url('/public/images/endImage.png');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+      }
+
+      &-bannerEnd {
+        // background-color: darkblue;
+        // height: 150px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+
+        &_images {
+          // background-color: rgba(239, 247, 255, 1);
+
+          .pacto {
+            // background-color: aqua;
+            // height: 100%;
+            // margin-right: 0.5rem;
+
+          }
+
+          .gen {
+            // background-color: orange;
+            // margin-left: 0.5rem;
+            // margin-right: 0.5rem;
+            // padding-left: 0.5rem;
+            // padding-right: 0.5rem;
+            // border-left: 0.03rem solid gray;
+            // border-right: 0.03rem solid gray;
+          }
+
+          .mujer {
+            // background-color: indianred;
+            // margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .contactContainer {
+      // background-color: #4D4D4D;
+
+      &-formBox {
+        // background-color: aqua;
+        // margin-top: 1rem;
+
+        .call {
+          // background-color: blueviolet;
+          // margin-left: 1rem;
+          // padding-top: 1rem;
+        }
+
+        .formBox {
+          // background-color: antiquewhite;
+          // margin: 1rem;
+          // padding: 1rem;
+          // border: 0.1rem solid black;
+          // border-radius: 0.5rem;
+
+          &-left {
+            // background-color: brown;
+
+            &_text {
+              // background-color: aqua;
+              // color: aliceblue;
+              // display: flex;
+
+              label {
+                // background-color: blueviolet;
+                // margin: 0.5rem 0 0.5rem 0.5rem;
+                // width: 70%;
+              }
+
+              input {
+                // margin: 0.5rem 0.5rem 0.5rem 0;
+              }
+            }
+          }
+
+          &-right {
+            // background-color:olivedrab ;
+            // @include centerFlex;
+            // text-align: center;
+
+            &_ref {
+              // background-color: #1A1A1A;
+              // margin-left: 0.5rem;
+              // border-radius: 0.5rem;
+              // padding: 0.5rem;
+            }
+
+            a {
+              // list-style: none;
+              // text-decoration: none;
+              // color: aliceblue;
+            }
+          }
+        }
+      }
+
+      &-imgBox {
+        // height: 30vh;
+        // @include centerFlex;
+        // background-image: url('/public/images/logoB.png');
+        // background-repeat: no-repeat;
+        // background-size: 60%;
+        // background-position: center;
+      }
+    }
+
+    footer {
+      // background-color: #1A1A1A;
+      // font-size: 0.8rem;
+      // color: white;
+      // text-align: center;
+    }
+  }
+}
+
+@include mQ(smallS) {
+  body {
+    // background-color: orangered;
+    .mainWrap {}
+
+    .mainContainer {
+
+      // background-color: blue;
+      &-banner {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+
+      &-information {
+        .contentInformation {
+          // background-color: darkblue;
+        }
+
+        .check::before {
+          // content: '\f00c';
+          // padding-right: 0.5rem;
+          // font-family: FontAwesome;
+        }
+
+        &_academy {
+          // background-color: chartreuse;
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          &__info {
+            // background-color: bisque;
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #854EC7;
+            }
+          }
+        }
+
+        &_biography {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #0096E0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #0096E0;
+            }
+
+            .check::before {
+              // color: #0096E0;
+            }
+          }
+        }
+
+        &_accomp {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #C13EB0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #C13EB0
+            }
+
+            .check::before {
+              // color: #C13EB0
+            }
+          }
+        }
+
+        &_imageQuery {
+          background-image: url('/public/images/manos2.jpg');
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: bottom;
+
+          .image {
+            // background-image: url('/public/images/pacto.png');
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: bottom;
+          }
+        }
+
+        &_recog {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #FF9A24;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #FF9A24
+            }
+
+            .check::before {
+              // color: #FF9A24
+            }
+          }
+        }
+
+        &_politic {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EA3693;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EA3693
+            }
+          }
+        }
+
+        &_traject {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #85C10B;
+            }
+          }
+
+          .contentList-traject {
+            li {
+              // list-style: none;
+            }
+
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #85C10B
+            }
+          }
+        }
+
+        &_other {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EF5D6A;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EF5D6A
+            }
+          }
+        }
+      }
+
+      &-banner_mid {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+    }
+
+    .midContainer {
+      &-imageQuery {
+        // margin-top: 1rem;
+        // background-image: url('/public/images/social.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+
+        .image {
+          // background-color: #9C15BF;
+          width: 20vh;
+          // margin: 0 0 0.5rem 0;
+          // background-image: url('/public/images/logoB.png');
+          // background-repeat: no-repeat;
+          // background-size: 70%;
+          // background-position: center;
+        }
+      }
+
+      &-information {
+        // margin: 1rem 2rem 0 2rem;
+      }
+    }
+
+    .endContainer {
+      // background-color: palegreen;
+
+      &-imageQuery {
+        // background-color: brown;
+        // margin-top: 1rem;
+        background-image: url('/public/images/endImage.png');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+      }
+
+      &-bannerEnd {
+        // background-color: darkblue;
+        // height: 150px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+
+        &_images {
+          // background-color: rgba(239, 247, 255, 1);
+
+          .pacto {
+            // background-color: aqua;
+            // height: 100%;
+            // margin-right: 0.5rem;
+
+          }
+
+          .gen {
+            // background-color: orange;
+            // margin-left: 0.5rem;
+            // margin-right: 0.5rem;
+            // padding-left: 0.5rem;
+            // padding-right: 0.5rem;
+            // border-left: 0.03rem solid gray;
+            // border-right: 0.03rem solid gray;
+          }
+
+          .mujer {
+            // background-color: indianred;
+            // margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .contactContainer {
+      // background-color: #4D4D4D;
+
+      &-formBox {
+        // background-color: aqua;
+        // margin-top: 1rem;
+
+        .call {
+          // background-color: blueviolet;
+          // margin-left: 1rem;
+          // padding-top: 1rem;
+        }
+
+        .formBox {
+          // background-color: antiquewhite;
+          // margin: 1rem;
+          // padding: 1rem;
+          // border: 0.1rem solid black;
+          // border-radius: 0.5rem;
+
+          &-left {
+            // background-color: brown;
+
+            &_text {
+              // background-color: aqua;
+              // color: aliceblue;
+              // display: flex;
+
+              label {
+                // background-color: blueviolet;
+                // margin: 0.5rem 0 0.5rem 0.5rem;
+                // width: 70%;
+              }
+
+              input {
+                // margin: 0.5rem 0.5rem 0.5rem 0;
+              }
+            }
+          }
+
+          &-right {
+            // background-color:olivedrab ;
+            // @include centerFlex;
+            // text-align: center;
+
+            &_ref {
+              // background-color: #1A1A1A;
+              // margin-left: 0.5rem;
+              // border-radius: 0.5rem;
+              // padding: 0.5rem;
+            }
+
+            a {
+              // list-style: none;
+              // text-decoration: none;
+              // color: aliceblue;
+            }
+          }
+        }
+      }
+
+      &-imgBox {
+        // height: 30vh;
+        // @include centerFlex;
+        // background-image: url('/public/images/logoB.png');
+        // background-repeat: no-repeat;
+        // background-size: 60%;
+        // background-position: center;
+      }
+    }
+
+    footer {
+      // background-color: #1A1A1A;
+      // font-size: 0.8rem;
+      // color: white;
+      // text-align: center;
+    }
+  }
+}
+
+@include mQ(mediumS) {
+  body {
+    // background-color: yellowgreen;
+    .mainWrap {}
+
+    .mainContainer {
+
+      // background-color: blue;
+      &-banner {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+
+      &-information {
+        .contentInformation {
+          // background-color: darkblue;
+        }
+
+        .check::before {
+          // content: '\f00c';
+          // padding-right: 0.5rem;
+          // font-family: FontAwesome;
+        }
+
+        &_academy {
+          // background-color: chartreuse;
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          &__info {
+            // background-color: bisque;
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #854EC7;
+            }
+          }
+        }
+
+        &_biography {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #0096E0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #0096E0;
+            }
+
+            .check::before {
+              // color: #0096E0;
+            }
+          }
+        }
+
+        &_accomp {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #C13EB0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #C13EB0
+            }
+
+            .check::before {
+              // color: #C13EB0
+            }
+          }
+        }
+
+        &_imageQuery {
+          background-image: url('/public/images/manos2.jpg');
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: bottom;
+
+          .image {
+            // background-image: url('/public/images/pacto.png');
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: bottom;
+          }
+        }
+
+        &_recog {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #FF9A24;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #FF9A24
+            }
+
+            .check::before {
+              // color: #FF9A24
+            }
+          }
+        }
+
+        &_politic {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EA3693;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EA3693
+            }
+          }
+        }
+
+        &_traject {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #85C10B;
+            }
+          }
+
+          .contentList-traject {
+            li {
+              // list-style: none;
+            }
+
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #85C10B
+            }
+          }
+        }
+
+        &_other {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EF5D6A;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EF5D6A
+            }
+          }
+        }
+      }
+
+      &-banner_mid {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+    }
+
+    .midContainer {
+      &-imageQuery {
+        // margin-top: 1rem;
+        // background-image: url('/public/images/social.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+
+        .image {
+          // background-color: #9C15BF;
+          width: 20vh;
+          // margin: 0 0 0.5rem 0;
+          // background-image: url('/public/images/logoB.png');
+          // background-repeat: no-repeat;
+          // background-size: 70%;
+          // background-position: center;
+        }
+      }
+
+      &-information {
+        // margin: 1rem 2rem 0 2rem;
+      }
+    }
+
+    .endContainer {
+      // background-color: palegreen;
+
+      &-imageQuery {
+        // background-color: brown;
+        // margin-top: 1rem;
+        background-image: url('/public/images/endMovil.jpg');
+        // background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+      }
+
+      &-bannerEnd {
+        // background-color: darkblue;
+        // height: 150px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+
+        &_images {
+          // background-color: rgba(239, 247, 255, 1);
+
+          .pacto {
+            // background-color: aqua;
+            // height: 100%;
+            // margin-right: 0.5rem;
+
+          }
+
+          .gen {
+            // background-color: orange;
+            // margin-left: 0.5rem;
+            // margin-right: 0.5rem;
+            // padding-left: 0.5rem;
+            // padding-right: 0.5rem;
+            // border-left: 0.03rem solid gray;
+            // border-right: 0.03rem solid gray;
+          }
+
+          .mujer {
+            // background-color: indianred;
+            // margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .contactContainer {
+      // background-color: #4D4D4D;
+
+      &-formBox {
+        // background-color: aqua;
+        // margin-top: 1rem;
+
+        .call {
+          // background-color: blueviolet;
+          // margin-left: 1rem;
+          // padding-top: 1rem;
+        }
+
+        .formBox {
+          // background-color: antiquewhite;
+          // margin: 1rem;
+          // padding: 1rem;
+          // border: 0.1rem solid black;
+          // border-radius: 0.5rem;
+
+          &-left {
+            // background-color: brown;
+
+            &_text {
+              // background-color: aqua;
+              // color: aliceblue;
+              // display: flex;
+
+              label {
+                // background-color: blueviolet;
+                // margin: 0.5rem 0 0.5rem 0.5rem;
+                // width: 70%;
+              }
+
+              input {
+                // margin: 0.5rem 0.5rem 0.5rem 0;
+              }
+            }
+          }
+
+          &-right {
+            // background-color:olivedrab ;
+            // @include centerFlex;
+            // text-align: center;
+
+            &_ref {
+              // background-color: #1A1A1A;
+              // margin-left: 0.5rem;
+              // border-radius: 0.5rem;
+              // padding: 0.5rem;
+            }
+
+            a {
+              // list-style: none;
+              // text-decoration: none;
+              // color: aliceblue;
+            }
+          }
+        }
+      }
+
+      &-imgBox {
+        // height: 30vh;
+        // @include centerFlex;
+        // background-image: url('/public/images/logoB.png');
+        // background-repeat: no-repeat;
+        // background-size: 60%;
+        // background-position: center;
+      }
+    }
+
+    footer {
+      // background-color: #1A1A1A;
+      // font-size: 0.8rem;
+      // color: white;
+      // text-align: center;
+    }
+  }
+}
+
+@include mQ(wideS) {
+  body {
+    // background-color: teal;
+    .mainWrap {}
+
+    .mainContainer {
+
+      // background-color: blue;
+      &-banner {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+
+      &-information {
+        .contentInformation {
+          // background-color: darkblue;
+        }
+
+        .check::before {
+          // content: '\f00c';
+          // padding-right: 0.5rem;
+          // font-family: FontAwesome;
+        }
+
+        &_academy {
+          // background-color: chartreuse;
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          &__info {
+            // background-color: bisque;
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #854EC7;
+            }
+          }
+        }
+
+        &_biography {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #0096E0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #0096E0;
+            }
+
+            .check::before {
+              // color: #0096E0;
+            }
+          }
+        }
+
+        &_accomp {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #C13EB0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #C13EB0
+            }
+
+            .check::before {
+              // color: #C13EB0
+            }
+          }
+        }
+
+        &_imageQuery {
+          background-image: url('/public/images/manos2.jpg');
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: bottom;
+
+          .image {
+            // background-image: url('/public/images/pacto.png');
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: bottom;
+          }
+        }
+
+        &_recog {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #FF9A24;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #FF9A24
+            }
+
+            .check::before {
+              // color: #FF9A24
+            }
+          }
+        }
+
+        &_politic {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EA3693;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EA3693
+            }
+          }
+        }
+
+        &_traject {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #85C10B;
+            }
+          }
+
+          .contentList-traject {
+            li {
+              // list-style: none;
+            }
+
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #85C10B
+            }
+          }
+        }
+
+        &_other {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EF5D6A;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EF5D6A
+            }
+          }
+        }
+      }
+
+      &-banner_mid {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+    }
+
+    .midContainer {
+      &-imageQuery {
+        // margin-top: 1rem;
+        // background-image: url('/public/images/social.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+
+        .image {
+          // background-color: #9C15BF;
+          width: 20vh;
+          // margin: 0 0 0.5rem 0;
+          // background-image: url('/public/images/logoB.png');
+          // background-repeat: no-repeat;
+          // background-size: 70%;
+          // background-position: center;
+        }
+      }
+
+      &-information {
+        // margin: 1rem 2rem 0 2rem;
+      }
+    }
+
+    .endContainer {
+      // background-color: palegreen;
+
+      &-imageQuery {
+        // background-color: brown;
+        // margin-top: 1rem;
+        background-image: url('/public/images/endMovil2.jpg');
+        // background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      &-bannerEnd {
+        // background-color: darkblue;
+        // height: 150px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+
+        &_images {
+          // background-color: rgba(239, 247, 255, 1);
+
+          .pacto {
+            // background-color: aqua;
+            // height: 100%;
+            // margin-right: 0.5rem;
+
+          }
+
+          .gen {
+            // background-color: orange;
+            // margin-left: 0.5rem;
+            // margin-right: 0.5rem;
+            // padding-left: 0.5rem;
+            // padding-right: 0.5rem;
+            // border-left: 0.03rem solid gray;
+            // border-right: 0.03rem solid gray;
+          }
+
+          .mujer {
+            // background-color: indianred;
+            // margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .contactContainer {
+      // background-color: #4D4D4D;
+
+      &-formBox {
+        // background-color: aqua;
+        // margin-top: 1rem;
+
+        .call {
+          // background-color: blueviolet;
+          // margin-left: 1rem;
+          // padding-top: 1rem;
+        }
+
+        .formBox {
+          // background-color: antiquewhite;
+          // margin: 1rem;
+          // padding: 1rem;
+          // border: 0.1rem solid black;
+          // border-radius: 0.5rem;
+
+          &-left {
+            // background-color: brown;
+
+            &_text {
+              // background-color: aqua;
+              // color: aliceblue;
+              // display: flex;
+
+              label {
+                // background-color: blueviolet;
+                // margin: 0.5rem 0 0.5rem 0.5rem;
+                // width: 70%;
+              }
+
+              input {
+                // margin: 0.5rem 0.5rem 0.5rem 0;
+              }
+            }
+          }
+
+          &-right {
+            // background-color:olivedrab ;
+            // @include centerFlex;
+            // text-align: center;
+
+            &_ref {
+              // background-color: #1A1A1A;
+              // margin-left: 0.5rem;
+              // border-radius: 0.5rem;
+              // padding: 0.5rem;
+            }
+
+            a {
+              // list-style: none;
+              // text-decoration: none;
+              // color: aliceblue;
+            }
+          }
+        }
+      }
+
+      &-imgBox {
+        // height: 30vh;
+        // @include centerFlex;
+        // background-image: url('/public/images/logoB.png');
+        // background-repeat: no-repeat;
+        background-size: 40%;
+        // background-position: center;
+      }
+    }
+
+    footer {
+      // background-color: #1A1A1A;
+      // font-size: 0.8rem;
+      // color: white;
+      // text-align: center;
+    }
+  }
+}
+
+@include mQ(largeS) {
+  body {
+    // background-color: violet;
+    .mainWrap {}
+
+    .mainContainer {
+
+      // background-color: blue;
+      &-banner {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+
+      &-information {
+        .contentInformation {
+          // background-color: darkblue;
+        }
+
+        .check::before {
+          // content: '\f00c';
+          // padding-right: 0.5rem;
+          // font-family: FontAwesome;
+        }
+
+        &_academy {
+          // background-color: chartreuse;
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          &__info {
+            // background-color: bisque;
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #854EC7;
+            }
+          }
+        }
+
+        &_biography {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #0096E0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #0096E0;
+            }
+
+            .check::before {
+              // color: #0096E0;
+            }
+          }
+        }
+
+        &_accomp {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #C13EB0;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #C13EB0
+            }
+
+            .check::before {
+              // color: #C13EB0
+            }
+          }
+        }
+
+        &_imageQuery {
+          background-image: url('/public/images/manos2.jpg');
+          // background-repeat: no-repeat;
+          // background-size: cover;
+          // background-position: bottom;
+
+          .image {
+            // background-image: url('/public/images/pacto.png');
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // background-position: bottom;
+          }
+        }
+
+        &_recog {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #FF9A24;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .nombre {
+              // font-size: 1.1rem;
+              // color: #FF9A24
+            }
+
+            .check::before {
+              // color: #FF9A24
+            }
+          }
+        }
+
+        &_politic {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EA3693;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EA3693
+            }
+          }
+        }
+
+        &_traject {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #85C10B;
+            }
+          }
+
+          .contentList-traject {
+            li {
+              // list-style: none;
+            }
+
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #85C10B
+            }
+          }
+        }
+
+        &_other {
+          // margin-bottom: 0.8rem;
+          // padding-bottom: 0.5rem;
+          // box-shadow: 0 4px 8px -9px rgba(0, 0, 0, 0.75);
+
+          .titleIcon-Information {
+
+            &_icon,
+            &_title {
+              // background-color: #EF5D6A;
+            }
+          }
+
+          &__info {
+            // margin: 0 2.5rem;
+
+            .check::before {
+              // color: #EF5D6A
+            }
+          }
+        }
+      }
+
+      &-banner_mid {
+        // background-color: brown;
+        // height: 80px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+      }
+    }
+
+    .midContainer {
+      &-imageQuery {
+        // margin-top: 1rem;
+        // background-image: url('/public/images/social.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+
+        .image {
+          // background-color: #9C15BF;
+          width: 20vh;
+          // margin: 0 0 0.5rem 0;
+          // background-image: url('/public/images/logoB.png');
+          // background-repeat: no-repeat;
+          // background-size: 70%;
+          // background-position: center;
+        }
+      }
+
+      &-information {
+        // margin: 1rem 2rem 0 2rem;
+      }
+    }
+
+    .endContainer {
+      // background-color: palegreen;
+
+      &-imageQuery {
+        // background-color: brown;
+        // margin-top: 1rem;
+        background-image: url('/public/images/endMovil3.jpg');
+        // background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+      }
+
+      &-bannerEnd {
+        // background-color: darkblue;
+        // height: 150px;
+        // @include centerFlex;
+        // background: linear-gradient(46deg, #9a29bd, #0067bd);
+        // background-size: 150% 150%;
+
+        // animation: AnimationName 5s ease infinite;
+
+        // @keyframes AnimationName {
+        //   0% {
+        //     background-position: 100% 0%
+        //   }
+
+        //   50% {
+        //     background-position: 0% 100%
+        //   }
+
+        //   100% {
+        //     background-position: 100% 0%
+        //   }
+        // }
+
+        &_images {
+          // background-color: rgba(239, 247, 255, 1);
+
+          .pacto {
+            // background-color: aqua;
+            // height: 100%;
+            // margin-right: 0.5rem;
+
+          }
+
+          .gen {
+            // background-color: orange;
+            // margin-left: 0.5rem;
+            // margin-right: 0.5rem;
+            // padding-left: 0.5rem;
+            // padding-right: 0.5rem;
+            // border-left: 0.03rem solid gray;
+            // border-right: 0.03rem solid gray;
+          }
+
+          .mujer {
+            // background-color: indianred;
+            // margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .contactContainer {
+      // background-color: #4D4D4D;
+
+      &-formBox {
+        // background-color: aqua;
+        // margin-top: 1rem;
+
+        .call {
+          // background-color: blueviolet;
+          // margin-left: 1rem;
+          // padding-top: 1rem;
+        }
+
+        .formBox {
+          // background-color: antiquewhite;
+          // margin: 1rem;
+          // padding: 1rem;
+          // border: 0.1rem solid black;
+          // border-radius: 0.5rem;
+
+          &-left {
+            // background-color: brown;
+
+            &_text {
+              // background-color: aqua;
+              // color: aliceblue;
+              // display: flex;
+
+              label {
+                // background-color: blueviolet;
+                // margin: 0.5rem 0 0.5rem 0.5rem;
+                // width: 70%;
+              }
+
+              input {
+                // margin: 0.5rem 0.5rem 0.5rem 0;
+              }
+            }
+          }
+
+          &-right {
+            // background-color:olivedrab ;
+            // @include centerFlex;
+            // text-align: center;
+
+            &_ref {
+              // background-color: #1A1A1A;
+              // margin-left: 0.5rem;
+              // border-radius: 0.5rem;
+              // padding: 0.5rem;
+            }
+
+            a {
+              // list-style: none;
+              // text-decoration: none;
+              // color: aliceblue;
+            }
+          }
+        }
+      }
+
+      &-imgBox {
+        // height: 30vh;
+        // @include centerFlex;
+        // background-image: url('/public/images/logoB.png');
+        // background-repeat: no-repeat;
+        background-size: 30%;
+        // background-position: center;
+      }
+    }
+
+    footer {
+      // background-color: #1A1A1A;
+      // font-size: 0.8rem;
+      // color: white;
+      // text-align: center;
+    }
+  }
+}
+
+@include mQ(xlS) {
+  body {
+    // background-color: fuchsia;
   }
 }
