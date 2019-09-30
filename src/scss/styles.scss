@@ -12,7 +12,7 @@
 @import
 './vendors/googlefonts',
 './vendors/hamburgers',
-'./vendors/animate.css',
+'./vendors/animate',
 './vendors/font-awesome';
 
 // carpeta base
@@ -23,8 +23,8 @@
 
 // carpeta layout
 @import
-'./layout/_grid.scss';
-// './layout/_portafolio';
+'./layout/_grid.scss',
+'./layout/_portafolio';
 // './layout/hero',
 // // './layout/main',
 // // './layout/activities',
@@ -40,6 +40,7 @@
 './components/header_title_icon',
 './components/_menu_social',
 './components/_modal',
+// './components/_responsive_menu',
 './components/article_icon';
 // './components/phrase_hero',
 // './components/header_title',

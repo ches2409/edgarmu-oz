@@ -4,25 +4,18 @@ block config
 include metatags_webapp.pug
 include ./components/navigation_off_canvas.pug
 include ./components/menu_social.pug
-include ./components/contacto.pug
-include ./components/header_title.pug
-include ./components/title_pack.pug
-include ./components/title_links.pug
-include ./components/modal.pug
-include ./components/box_info.pug
-include ./components/ligth_box.pug
-include ./components/box_info_images.pug
-include ./components/galeria.pug
+//- include ./components/contacto.pug
+//- include ./components/header_title.pug
+//- include ./components/title_pack.pug
+//- include ./components/title_links.pug
+//- include ./components/modal.pug
+//- include ./components/box_info.pug
+//- include ./components/ligth_box.pug
+//- include ./components/box_info_images.pug
+//- include ./components/galeria.pug
 include ./components/header_titleIcon.pug
 include ./components/article_icon.pug
 include ./components/modal.pug
-
-
-
-
-
-
-
 
 
 
@@ -42,19 +35,24 @@ html(lang='es')
     meta(name="description" content=description)
     meta(name="application-name", content=siteTitle)
     link(rel="stylesheet", href="./styles.css")
-    link(rel="stylesheet", href="/src/scss/vendors/animate.css")
+
+
+
   body
     +navigationOffCanvas([
       [pages[0], sites[0], ''],
-      [pages[1], sites[1], 'blanck'],
-      [pages[2], sites[2], 'blanck'],
-      [pages[3], sites[3], 'blanck']
+      [pages[1], sites[1], ''],
+      [pages[2], sites[2], ''],
+      [pages[3], sites[3], ''],
+      [pages[4], sites[4], ''],
+      [pages[5], sites[5], '']
     ] )
     +social([
-      ['portafolio.html', 'book-open', 'fas', 'blanck'],
-      ['https://www.facebook.com/codigocreativoing', 'facebook-f', 'fa', 'blanck'],
-      ['https://twitter.com/creativecodeing?lang=es', 'twitter', 'fa', 'blanck'],
-      ['https://www.instagram.com/codigocreativoing/', 'instagram', 'fa', 'blanck']
+      ['programa.html', 'book', 'fas', 'blank'],
+      ['portafolio.html', 'book-open', 'fas', 'blank'],
+      ['https://www.facebook.com/EdgarMunozT', 'facebook-f', 'fab', 'blank'],
+      ['https://twitter.com/edgarmunozt?s=09', 'twitter', 'fab', 'blank'],
+      ['https://www.instagram.com/edgarmunoz_t', 'instagram', 'fab', 'blank']
     ])
     //- +links([
     //-   [services[0], serviceSites[0], "images/"+servicesImg[0]],
@@ -64,3 +62,23 @@ html(lang='es')
     //- ])
     block content
     script(src="./script.js")
+    script(src="./wow.min.js")
+    script new WOW().init();
+    //- <!-- WhatsHelp.io widget -->
+    //- <script type="text/javascript">
+    //-   (function () {
+    //-     var options = {
+    //-         facebook: "960498564112481", // Facebook page ID
+    //-         whatsapp: "573044071288", // WhatsApp number
+    //-         call_to_action: "Hagamos historia", // Call to action
+    //-         button_color: "#129BF4", // Color of button
+    //-         position: "right", // Position may be 'right' or 'left'
+    //-         order: "whatsapp,facebook", // Order of buttons
+    //-     };
+    //-     var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+    //-     var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    //-     s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    //-     var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    //-   })();
+    //- </script>
+<!-- /WhatsHelp.io widget -->

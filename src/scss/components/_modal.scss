@@ -9,7 +9,7 @@
     // background-color: red;
     display: flex;
     z-index: 1900;
-    .fa{
+    .fas{
       // background-color: orangered;
       cursor: pointer;
       // background-color: red;
@@ -72,7 +72,7 @@
       color: #2B66B0;
       opacity: 0;
     }
-    &__bottom .fa{
+    &__bottom .fas{
       transition: color .3s linear,
                   transform .3s ease-in-out;
       &:hover{

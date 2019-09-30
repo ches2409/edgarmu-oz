@@ -1,0 +1,15 @@
+extends ../includes/layout
+
+append config
+  -pageTitle= "Nuestro programa"
+  -description="Es hora de hacer un cambio a la historia de Pitalito"
+  -sites=['index.html', 'index.html#edgarmunoz', 'index.html#somos', 'index.html#contacto', './programa.html','./portafolio.html']
+
+block content
+  section.portafolio
+    .portafolio-container
+      .mainContainer-banner
+        .mainContainer-banner_image
+          p ¡Todos del lado correcto de la historia!
+      .portafolio-book
+        <iframe style='width:980px;height:540px' src='http://online.flipbuilder.com/qhme/rvro/mobile/index.html#p=1'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen='true' ></iframe>

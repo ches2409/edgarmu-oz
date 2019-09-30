@@ -1,9 +1,24 @@
 //- fixme:pendiente por revisar la identacion
-main.mainWrap
-  section#edgarmunoz.mainContainer-general.u-firstContent
+main#edgarmunoz.mainWrap
+
+  //- .header
+  //-   .overlay
+  //-     .container
+  //-       .logo-nav
+  //-         .logo
+  //-           a(href="#", title="Edgar Muñoz")
+  //-           i.fa.fa-bars.fa-2x
+  //-           ul.nav-two
+  //-             li sobre
+  //-             li portafolio
+  //-             li codigo
+  //-             li blog
+  //-             li contacto
+
+  section.mainContainer-general
     .mainContainer-banner
       .mainContainer-banner_image
-        img(src="/public/images/mivida.png", alt="" height="60px")
+        img(src="/images/mivida.png", alt="" height="60px")
     .mainContainer-information
       section.mainContainer-information_academy
         +headerTitleIcon([
@@ -137,8 +152,8 @@ main.mainWrap
           p.contentInformation Integrante de la comisión redactora del proyecto de ley #[span.txtEmph “Reforma a la seguridad social dirigida a promoción y prevención en salud mental”]. Congreso de la República. Junio #[span.txtStrong-cSalm 2004] Santa Fe de Bogotá.
     .mainContainer-banner_mid
       .mainContainer-banner_midImage
-        img(src="/public/images/principios.png", alt="" height="60px")
-  section.midContainer
+        img(src="/images/principios.png", alt="" height="60px")
+  section.midContainer#somos
     .midContainer-imageQuery
       .image
     .midContainer-information
@@ -147,56 +162,56 @@ main.mainWrap
       +articleIcon([
         [
         'Ética',
-        'etica.png',
+        'etica',
         'Creemos en la transparencia como herramienta para la construcción colectiva del desarrollo. Cada gestión siempre de cara a la ciudadanía, abierta a toda veeduría y rendición de cuentas. La cultura de la legalidad como constante en todos los actos administrativos.'
         ]
       ])
       +articleIcon([
         [
         'Experiencia',
-        'experiencia.png',
+        'experiencia',
         'Somos fruto de un pueblo trabajador, campesino y artesano, los conocimientos de nuestros mayores son la base para la construcción de nuestra sociedad, las nuevas generaciones son las responsables de capitalizar esta gran herencia y tomar las riendas del presente y futuro de nuestra ciudad.'
         ]
       ])
       +articleIcon([
         [
         'Equidad',
-        'equidad.png',
+        'equidad',
         'El empoderamiento de las nuevas generaciones, la dignidad y el trato igualitario a la mujer, la visibilización y respeto de los derechos de todas las minorías como prioridad de la gestión pública. Trabajaremos por la generación de más y mejores oportunidades y por la superación de la inequidad, discriminación y violencias contra los más humildes y vulnerables.'
         ]
       ])
       +articleIcon([
         [
         'Esperanza',
-        'esperanza.png',
+        'esperanza',
         'Tenemos nuestros propósitos y nuestras metas claras. Construir la ciudad de nuestros sueños es un logro que nos une a todos a trabajar con optimismo esperando siempre lo mejor para el presente y futuro de Pitalito.'
         ]
       ])
       +articleIcon([
         [
         'Empatía',
-        'empatia.png',
+        'empatia',
         'Nos sentimos orgullosos de ser hijos de esta hermosa tierra, compartimos los mismos sueños, anhelos que nos permitan forjar lasos de fraternidad, unidades irrompibles con la ciudadanía y pensar en la construcción participativa de la hoja de ruta que recorreremos de su mano.'
         ]
       ])
       +articleIcon([
         [
         'Excelencia',
-        'excelencia.png',
+        'excelencia',
         'Estamos orientados a dar lo mejor de cada uno en cada una de nuestras actuaciones, la búsqueda de la excelencia y el desarrollo humano es un compromiso. Por convicción creemos que como individuos tenemos la capacidad para generar el cambio que queremos como sociedad. Es cuestión de trabajar en equipo.'
         ]
       ])
       +articleIcon([
         [
         'Educación',
-        'educacion.png',
+        'educacion',
         'Creemos en la educación como vía para transformar positivamente la sociedad. Mediante la cultura y el civismo forjaremos el paradigma de la Laboyanidad. Entendemos la educación como movilizador social alrededor de las artes, la ciencia, la tecnología y la innovación. La educación es el camino más seguro para desarrollar capacidades y romper ciclos de inequidad.'
         ]
       ])
       +articleIcon([
         [
         'Emprendimiento',
-        'emprendimiento.png',
+        'emprendimiento',
         'Estamos convencidos que podemos ser los protagonistas de nuestro propio desarrollo, impulsar el fomento de mayores y mejores oportunidades de empleo, educación y formación de empresa como prioridad de gobierno.'
         ]
       ])
@@ -205,42 +220,43 @@ main.mainWrap
       //- .endImage
     .endContainer-bannerEnd
       .endContainer-bannerEnd_images
-        .pacto
-          img(src="/public/images/pactoB.png", alt="Pacto por el desarrollo" height="60px")
-        .gen
-          img(src="/public/images/genB.png", alt="yo yengo el Gen E" height="60px")
-        .mujer
-          img(src="/public/images/mujerB.png", alt="mujer" height="60px")
-  section.contactContainer
+       h2 ¡Todos del lado correcto de la historia!
+        //- .pacto
+        //-   img(class="wow zoomIn " src="/images/pactoB.png", alt="Pacto por el desarrollo" height="60px")
+        //- .gen
+        //-   img(class="wow zoomIn" data-wow-delay="0.5s" src="/images/genB.png", alt="yo tengo el Gen E" height="60px")
+        //- .mujer
+        //-   img(class="wow zoomIn" data-wow-delay="1s" src="/images/mujerB.png", alt="mujer" height="60px")
+  section.contactContainer#contacto
     .contactContainer-formBox
       .call
-        h3.invitationText Se parte de la nueva Historia
+        h3.invitationText ¿De qué parte de la historia estás?
       form(class="formBox" action="" method="")
-        .formBox-left
-          .formBox-left_text.Name
-            label(for="nombre")
-              |Nombre
-            input(type="text" name="nombre" id="nombre" placeholder=" ..." value="")
-          .formBox-left_text.Email
-            label(for="email")
-              |Email
-            input(type="email" name="email" id="email" placeholder=" ..." value="")
-          .formBox-left_text.Phone
-            label(for="telefono")
-              |Teléfono
-            input(type="text" name="telefono" id="telefono" placeholder=" ..." value="")
-          .formBox-left_text.Id
-            label(for="identificación")
-              |Cédula
-            input(type="text" name="identificación" id="identificación" placeholder=" ..." value="")
+        //- .formBox-left
+        //-   .formBox-left_text.Name
+        //-     label(for="nombre")
+        //-       |Nombre
+        //-     input(type="text" name="nombre" id="nombre" placeholder=" ..." value="")
+        //-   .formBox-left_text.Email
+        //-     label(for="email")
+        //-       |Email
+        //-     input(type="email" name="email" id="email" placeholder=" ..." value="")
+        //-   .formBox-left_text.Phone
+        //-     label(for="telefono")
+        //-       |Teléfono
+        //-     input(type="text" name="telefono" id="telefono" placeholder=" ..." value="")
+        //-   .formBox-left_text.Id
+        //-     label(for="identificación")
+        //-       |Cédula
+        //-     input(type="text" name="identificación" id="identificación" placeholder=" ..." value="")
         .formBox-right
           //- button(type="submit")
           //-   |Hagamos Historia
           .formBox-right_ref
-            a(href="#")
+            a(href="http://eepurl.com/gtwcoz")
               |Hagamos Historia
 
-    .contactContainer-imgBox
+    .contactContainer-imgBox.animated.heartBeat.infinite
 footer
   p.footerText todos los derechos reservados, Edgar Muñoz 2019
   p.footerText Diseñado por departamento de marketing y comunicaciones

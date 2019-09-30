@@ -135,12 +135,12 @@
       }
     }
     &_imageQuery {
-      background-image: url('/public/images/manos.jpg');
+      background-image: url('./images/manos.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: bottom;
       .image{
-        background-image: url('/public/images/pacto.png');
+        background-image: url('./images/pacto.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
@@ -270,7 +270,7 @@
 .midContainer{
   &-imageQuery {
     margin-top: 1rem;
-    background-image: url('/public/images/social.jpg');
+    background-image: url('./images/social.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -278,7 +278,7 @@
       background-color: #9C15BF;
       width: 20vh;
       margin:0 0 0.5rem 0;
-      background-image: url('/public/images/logoB.png');
+      background-image: url('./images/logoB.png');
       background-repeat: no-repeat;
       background-size: 70%;
       background-position: center;
@@ -294,7 +294,7 @@
   &-imageQuery {
     // background-color: brown;
     margin-top: 1rem;
-    background-image: url('/public/images/endImage.png');
+    background-image: url('./images/endImage.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -302,6 +302,8 @@
 
   &-bannerEnd {
     // background-color: darkblue;
+    color: aliceblue;
+    text-align: center;
     height: 150px;
     @include centerFlex;
     background: linear-gradient(46deg, #9a29bd, #0067bd);
@@ -358,14 +360,14 @@
 
     .call {
       // background-color: blueviolet;
-      margin-left: 1rem;
+      margin-left: 0;
       padding-top: 1rem;
     }
 
     .formBox {
       // background-color: antiquewhite;
-      margin: 1rem;
-      padding: 1rem;
+      margin: 1rem 2rem;
+      padding: 0.5rem;
       border: 0.1rem solid black;
       border-radius: 0.5rem;
 
@@ -413,7 +415,7 @@
   &-imgBox {
     height: 30vh;
     @include centerFlex;
-    background-image: url('/public/images/logoB.png');
+    background-image: url('./images/logoB.png');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
@@ -542,13 +544,13 @@ footer {
         }
 
         &_imageQuery {
-          background-image: url('/public/images/manos2.jpg');
+          background-image: url('./images/manos2.jpg');
           // background-repeat: no-repeat;
           // background-size: cover;
           // background-position: bottom;
 
           .image {
-            // background-image: url('/public/images/pacto.png');
+            // background-image: url('/images/pacto.png');
             // background-repeat: no-repeat;
             // background-size: contain;
             // background-position: bottom;
@@ -681,7 +683,7 @@ footer {
     .midContainer {
       &-imageQuery {
         // margin-top: 1rem;
-        // background-image: url('/public/images/social.jpg');
+        // background-image: url('/images/social.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -690,7 +692,7 @@ footer {
           // background-color: #9C15BF;
           width: 20vh;
           // margin: 0 0 0.5rem 0;
-          // background-image: url('/public/images/logoB.png');
+          // background-image: url('/images/logoB.png');
           // background-repeat: no-repeat;
           // background-size: 70%;
           // background-position: center;
@@ -708,7 +710,7 @@ footer {
       &-imageQuery {
         // background-color: brown;
         // margin-top: 1rem;
-        background-image: url('/public/images/endImage.png');
+        // background-image: url('./images/endImage.png');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -773,9 +775,9 @@ footer {
         // margin-top: 1rem;
 
         .call {
-          // background-color: blueviolet;
-          // margin-left: 1rem;
-          // padding-top: 1rem;
+          // background-color: yellowgreen;
+          margin-left: 1rem;
+          padding-top: 1rem;
         }
 
         .formBox {
@@ -829,7 +831,7 @@ footer {
       &-imgBox {
         // height: 30vh;
         // @include centerFlex;
-        // background-image: url('/public/images/logoB.png');
+        // background-image: url('/images/logoB.png');
         // background-repeat: no-repeat;
         // background-size: 60%;
         // background-position: center;
@@ -959,13 +961,13 @@ footer {
         }
 
         &_imageQuery {
-          background-image: url('/public/images/manos2.jpg');
+          background-image: url('./images/manos2.jpg');
           // background-repeat: no-repeat;
           // background-size: cover;
           // background-position: bottom;
 
           .image {
-            // background-image: url('/public/images/pacto.png');
+            // background-image: url('/images/pacto.png');
             // background-repeat: no-repeat;
             // background-size: contain;
             // background-position: bottom;
@@ -1098,7 +1100,7 @@ footer {
     .midContainer {
       &-imageQuery {
         // margin-top: 1rem;
-        // background-image: url('/public/images/social.jpg');
+        // background-image: url('/images/social.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -1107,7 +1109,7 @@ footer {
           // background-color: #9C15BF;
           width: 20vh;
           // margin: 0 0 0.5rem 0;
-          // background-image: url('/public/images/logoB.png');
+          // background-image: url('/images/logoB.png');
           // background-repeat: no-repeat;
           // background-size: 70%;
           // background-position: center;
@@ -1125,7 +1127,7 @@ footer {
       &-imageQuery {
         // background-color: brown;
         // margin-top: 1rem;
-        background-image: url('/public/images/endImage.png');
+        background-image: url('./images/endImage.png');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -1191,7 +1193,7 @@ footer {
 
         .call {
           // background-color: blueviolet;
-          // margin-left: 1rem;
+          // margin-left: 0;
           // padding-top: 1rem;
         }
 
@@ -1246,7 +1248,7 @@ footer {
       &-imgBox {
         // height: 30vh;
         // @include centerFlex;
-        // background-image: url('/public/images/logoB.png');
+        // background-image: url('/images/logoB.png');
         // background-repeat: no-repeat;
         // background-size: 60%;
         // background-position: center;
@@ -1376,13 +1378,13 @@ footer {
         }
 
         &_imageQuery {
-          background-image: url('/public/images/manos2.jpg');
+          background-image: url('./manos2.jpg');
           // background-repeat: no-repeat;
           // background-size: cover;
           // background-position: bottom;
 
           .image {
-            // background-image: url('/public/images/pacto.png');
+            // background-image: url('/images/pacto.png');
             // background-repeat: no-repeat;
             // background-size: contain;
             // background-position: bottom;
@@ -1515,7 +1517,7 @@ footer {
     .midContainer {
       &-imageQuery {
         // margin-top: 1rem;
-        // background-image: url('/public/images/social.jpg');
+        // background-image: url('/images/social.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -1524,7 +1526,7 @@ footer {
           // background-color: #9C15BF;
           width: 20vh;
           // margin: 0 0 0.5rem 0;
-          // background-image: url('/public/images/logoB.png');
+          // background-image: url('/images/logoB.png');
           // background-repeat: no-repeat;
           // background-size: 70%;
           // background-position: center;
@@ -1542,10 +1544,10 @@ footer {
       &-imageQuery {
         // background-color: brown;
         // margin-top: 1rem;
-        background-image: url('/public/images/endMovil.jpg');
+        background-image: url('./images/endMovil.png');
         // background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
+        background-position: center;
       }
 
       &-bannerEnd {
@@ -1614,7 +1616,7 @@ footer {
 
         .formBox {
           // background-color: antiquewhite;
-          // margin: 1rem;
+          margin: 1rem 4rem;
           // padding: 1rem;
           // border: 0.1rem solid black;
           // border-radius: 0.5rem;
@@ -1663,7 +1665,7 @@ footer {
       &-imgBox {
         // height: 30vh;
         // @include centerFlex;
-        // background-image: url('/public/images/logoB.png');
+        // background-image: url('/images/logoB.png');
         // background-repeat: no-repeat;
         // background-size: 60%;
         // background-position: center;
@@ -1793,13 +1795,13 @@ footer {
         }
 
         &_imageQuery {
-          background-image: url('/public/images/manos2.jpg');
+          background-image: url('./images/manos2.jpg');
           // background-repeat: no-repeat;
-          // background-size: cover;
-          // background-position: bottom;
+          background-size: cover;
+          // background-position: center;
 
           .image {
-            // background-image: url('/public/images/pacto.png');
+            // background-image: url('/images/pacto.png');
             // background-repeat: no-repeat;
             // background-size: contain;
             // background-position: bottom;
@@ -1932,7 +1934,7 @@ footer {
     .midContainer {
       &-imageQuery {
         // margin-top: 1rem;
-        // background-image: url('/public/images/social.jpg');
+        background-image: url('./images/social2.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -1941,7 +1943,7 @@ footer {
           // background-color: #9C15BF;
           width: 20vh;
           // margin: 0 0 0.5rem 0;
-          // background-image: url('/public/images/logoB.png');
+          // background-image: url('/images/logoB.png');
           // background-repeat: no-repeat;
           // background-size: 70%;
           // background-position: center;
@@ -1959,7 +1961,7 @@ footer {
       &-imageQuery {
         // background-color: brown;
         // margin-top: 1rem;
-        background-image: url('/public/images/endMovil2.jpg');
+        background-image: url('./images/endMovil.png');
         // background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
@@ -2022,6 +2024,7 @@ footer {
       &-formBox {
         // background-color: aqua;
         // margin-top: 1rem;
+        margin: 1rem 6rem;
 
         .call {
           // background-color: blueviolet;
@@ -2080,7 +2083,7 @@ footer {
       &-imgBox {
         // height: 30vh;
         // @include centerFlex;
-        // background-image: url('/public/images/logoB.png');
+        // background-image: url('/images/logoB.png');
         // background-repeat: no-repeat;
         background-size: 40%;
         // background-position: center;
@@ -2210,13 +2213,13 @@ footer {
         }
 
         &_imageQuery {
-          background-image: url('/public/images/manos2.jpg');
+          background-image: url('./images/manos3.jpg');
           // background-repeat: no-repeat;
           // background-size: cover;
-          // background-position: bottom;
+          background-position: 15%;
 
           .image {
-            // background-image: url('/public/images/pacto.png');
+            // background-image: url('/images/pacto.png');
             // background-repeat: no-repeat;
             // background-size: contain;
             // background-position: bottom;
@@ -2349,7 +2352,7 @@ footer {
     .midContainer {
       &-imageQuery {
         // margin-top: 1rem;
-        // background-image: url('/public/images/social.jpg');
+        // background-image: url('/images/social.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -2358,7 +2361,7 @@ footer {
           // background-color: #9C15BF;
           width: 20vh;
           // margin: 0 0 0.5rem 0;
-          // background-image: url('/public/images/logoB.png');
+          // background-image: url('/images/logoB.png');
           // background-repeat: no-repeat;
           // background-size: 70%;
           // background-position: center;
@@ -2376,13 +2379,14 @@ footer {
       &-imageQuery {
         // background-color: brown;
         // margin-top: 1rem;
-        background-image: url('/public/images/endMovil3.jpg');
+        // background-image: url('./images/endMovil3.jpg');
         // background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;
       }
 
       &-bannerEnd {
+
         // background-color: darkblue;
         // height: 150px;
         // @include centerFlex;
@@ -2438,7 +2442,7 @@ footer {
 
       &-formBox {
         // background-color: aqua;
-        // margin-top: 1rem;
+        margin: 1rem 8rem;
 
         .call {
           // background-color: blueviolet;
@@ -2497,7 +2501,7 @@ footer {
       &-imgBox {
         // height: 30vh;
         // @include centerFlex;
-        // background-image: url('/public/images/logoB.png');
+        // background-image: url('/images/logoB.png');
         // background-repeat: no-repeat;
         background-size: 30%;
         // background-position: center;
@@ -2516,5 +2520,75 @@ footer {
 @include mQ(xlS) {
   body {
     // background-color: fuchsia;
+    .contactContainer {
+      // background-color: #4D4D4D;
+
+      &-formBox {
+        // background-color: aqua;
+        margin: 1rem 20rem;
+
+        .call {
+          // background-color: blueviolet;
+          margin: 1rem -14rem;
+          // padding-top: 1rem;
+        }
+
+        .formBox {
+          // background-color: antiquewhite;
+          // margin: 1rem;
+          // padding: 1rem;
+          // border: 0.1rem solid black;
+          // border-radius: 0.5rem;
+
+          &-left {
+            // background-color: brown;
+
+            &_text {
+              // background-color: aqua;
+              // color: aliceblue;
+              // display: flex;
+
+              label {
+                // background-color: blueviolet;
+                // margin: 0.5rem 0 0.5rem 0.5rem;
+                // width: 70%;
+              }
+
+              input {
+                // margin: 0.5rem 0.5rem 0.5rem 0;
+              }
+            }
+          }
+
+          &-right {
+            // background-color:olivedrab ;
+            // @include centerFlex;
+            // text-align: center;
+
+            &_ref {
+              // background-color: #1A1A1A;
+              // margin-left: 0.5rem;
+              // border-radius: 0.5rem;
+              // padding: 0.5rem;
+            }
+
+            a {
+              // list-style: none;
+              // text-decoration: none;
+              // color: aliceblue;
+            }
+          }
+        }
+      }
+
+      &-imgBox {
+        // height: 30vh;
+        // @include centerFlex;
+        // background-image: url('/images/logoB.png');
+        // background-repeat: no-repeat;
+        // background-size: 30%;
+        // background-position: center;
+      }
+    }
   }
 }

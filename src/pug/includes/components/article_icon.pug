@@ -1,12 +1,13 @@
--imgPath='/public/images/'
+-imgPath='./images/'
 mixin articleIcon(content)
     each item in content
-      section.articleIcon
+      section.articleIcon(class=`${item[1]}`)
         .articleIcon-header
           .articleIcon-header_title
-            h3.title_text #{item[0]}
+            h3.title_text.wow.bounceInRight #{item[0]}
           .articleIcon-header_icon
-            img(src=imgPath+`${item[1]}`, alt="" height="60px")
+            img(src=imgPath+`${item[1]}`+'.png', alt="" height="60px")
         .articleIcon-body
           p.articleIcon-body_text #{item[2]}
+          .blank
 

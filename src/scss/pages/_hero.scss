@@ -2,10 +2,10 @@
   // background-color: gray;
 
   &-background{
-    background-image: url('/public/images/hero3.jpg');
+    background-image: url('./images/hero3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
   }
   &-contact {
     // background-color: pink;
@@ -31,7 +31,7 @@
       }
       .icon{
         background-color: #8B29B8;
-        background-image: url('/public/images/tel.png');
+        background-image: url('./images/tel.png');
         // background-repeat: no-repeat;
         // background-position: center;
         // background-size: 60%;
@@ -47,7 +47,7 @@
 
       .icon {
         background-color: rgb(39, 112, 200);
-        background-image: url('/public/images/chat.png');
+        background-image: url('./images/chat.png');
         // background-repeat: no-repeat;
         // background-position: center;
         // background-size: 70%;
@@ -81,32 +81,38 @@
         background-position: 100% 0%
       }
     }
+    span{
+      font-family: $ftOswald;
+    }
   }
 
   &-logos {
     background-color: rgba(239, 247, 255, 1);
+    color: #0067bd;
+    justify-content: center;
+    text-align: center;
 
-    .pacto {
-      // background-color: aqua;
-      // height: 100%;
-      margin-right: 0.5rem;
+    // .pacto {
+    //   // background-color: aqua;
+    //   // height: 100%;
+    //   margin-right: 0.5rem;
 
-    }
+    // }
 
-    .gen {
-      // background-color: orange;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      border-left: 0.03rem solid gray;
-      border-right: 0.03rem solid gray;
-    }
+    // .gen {
+    //   // background-color: orange;
+    //   margin-left: 0.5rem;
+    //   margin-right: 0.5rem;
+    //   padding-left: 0.5rem;
+    //   padding-right: 0.5rem;
+    //   border-left: 0.03rem solid gray;
+    //   border-right: 0.03rem solid gray;
+    // }
 
-    .mujer {
-      // background-color: indianred;
-      margin-left: 0.5rem;
-    }
+    // .mujer {
+    //   // background-color: indianred;
+    //   margin-left: 0.5rem;
+    // }
   }
 }
 
@@ -124,7 +130,7 @@
       // background-color: gray;
 
       &-background {
-        // background-image: url('/public/images/hero3.jpg');
+        // background-image: url('/images/hero3.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: bottom;
@@ -156,7 +162,7 @@
 
           .icon {
             // background-color: #8B29B8;
-            // background-image: url('/public/images/tel.png');
+            // background-image: url('/images/tel.png');
             // background-repeat: no-repeat;
             // background-position: center;
             background-size: 55%;
@@ -172,7 +178,7 @@
 
           .icon {
             // background-color: rgb(39, 112, 200);
-            // background-image: url('/public/images/chat.png');
+            // background-image: url('/images/chat.png');
             // background-repeat: no-repeat;
             // background-position: center;
             background-size: 40%;
@@ -210,6 +216,7 @@
 
       &-logos {
         background-color: rgba(239, 247, 255, 1);
+        // color: #0067bd;
 
         .pacto {
           // background-color: aqua;
@@ -244,7 +251,7 @@
       // background-color: gray;
 
       &-background {
-        background-image: url('/public/images/hero4.jpg');
+        background-image: url('./images/hero4.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -276,7 +283,7 @@
 
           .icon {
             // background-color: #8B29B8;
-            // background-image: url('/public/images/tel.png');
+            // background-image: url('/images/tel.png');
             // background-repeat: no-repeat;
             // background-position: center;
             background-size: 50%;
@@ -292,7 +299,7 @@
 
           .icon {
             // background-color: rgb(39, 112, 200);
-            // background-image: url('/public/images/chat.png');
+            // background-image: url('/images/chat.png');
             // background-repeat: no-repeat;
             // background-position: center;
             background-size: 40%;
@@ -364,7 +371,7 @@
       // background-color: gray;
 
       &-background {
-        background-image: url('/public/images/hero4.jpg');
+        background-image: url('./images/hero2.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         // background-position: center;
@@ -396,7 +403,7 @@
 
           .icon {
             // background-color: #8B29B8;
-            // background-image: url('/public/images/tel.png');
+            // background-image: url('/images/tel.png');
             // background-repeat: no-repeat;
             // background-position: center;
             background-size: 40%;
@@ -412,7 +419,7 @@
 
           .icon {
             // background-color: rgb(39, 112, 200);
-            // background-image: url('/public/images/chat.png');
+            // background-image: url('/images/chat.png');
             // background-repeat: no-repeat;
             // background-position: center;
             background-size: 30%;
@@ -484,7 +491,7 @@
       // background-color: gray;
 
       &-background {
-        background-image: url('/public/images/hero5.jpg');
+        background-image: url('./images/hero5.jpg');
         // background-repeat: no-repeat;
         // background-size: cover;
         background-position: center;
@@ -517,7 +524,7 @@
 
           .icon {
             // background-color: #8B29B8;
-            // background-image: url('/public/images/tel.png');
+            // background-image: url('/images/tel.png');
             // background-repeat: no-repeat;
             // background-position: center;
             // background-size: 30%;
@@ -533,7 +540,7 @@
 
           .icon {
             // background-color: rgb(39, 112, 200);
-            // background-image: url('/public/images/chat.png');
+            // background-image: url('/images/chat.png');
             // background-repeat: no-repeat;
             // background-position: center;
             // background-size: 20%;
@@ -601,5 +608,15 @@
 @include mQ(xlS) {
   body {
     //background-color: fuchsia;
+    .heroWrap {
+      // background-color: gray;
+
+      &-background {
+        background-image: url('./images/hero5.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        background-position: top;
+      }
+    }
   }
 }
